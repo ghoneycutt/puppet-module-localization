@@ -26,7 +26,7 @@ Hash of languages with their respective packages.
 
 # Example Hiera configuration
 <pre>
---
+---
 :backends:
   - yaml
 :hierarchy:
@@ -43,4 +43,15 @@ Hash of languages with their respective packages.
 
 # Example Hiera data
 
-included in data directory
+More examples included in data/ directory of module.
+
+
+<pre>
+---
+
+localization::languages:
+  'sv':
+    packages:
+      - aspell-sv
+      - kde-i18n-Swedish
+</pre>
