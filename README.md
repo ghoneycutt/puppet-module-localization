@@ -9,7 +9,7 @@ Ensure installation of language related packages.
 
 # Compatibility
 ---------------
-This module is built for use with Puppet v3 on systems that can specify a list of packages to be ensured. Not Solaris.
+This module is built for use with Puppet v3 on systems that can specify a list of packages to be ensured.
 
 ===
 
@@ -43,22 +43,4 @@ Hash of languages with their respective packages.
 
 # Example Hiera data
 
-## osfamily/RedHat-5.yaml
-<pre>
-localization::languages:
-  'sv':
-    packages:
-      - aspell-sv
-      - kde-i18n-Swedish
-</pre>
-
-## osfamily/RedHat-6.yaml
-<pre>
-localization::languages:
-  'sv':
-    packages:
-      - eclipse-nls-sv
-      - hunspell-sv
-      - kde-i18n-Swedish
-      - kde-l10n-Swedish
-</pre>
+included in data directory

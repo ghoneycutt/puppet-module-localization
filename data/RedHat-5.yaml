@@ -1,0 +1,7 @@
+---
+
+localization::languages:
+  'sv':
+    packages:
+      - aspell-sv
+      - kde-i18n-Swedish

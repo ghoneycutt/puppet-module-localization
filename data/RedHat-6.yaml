@@ -1,0 +1,9 @@
+---
+
+localization::languages:
+  'sv':
+    packages:
+      - eclipse-nls-sv
+      - hunspell-sv
+      - kde-i18n-Swedish
+      - kde-l10n-Swedish

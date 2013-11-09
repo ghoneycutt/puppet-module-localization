@@ -7,6 +7,7 @@ class localization (
 ) {
 
   if $languages != undef {
+    validate_hash($languages)
     create_resources('localization::lang',$languages)
   }
 }
