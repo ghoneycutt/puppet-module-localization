@@ -1,10 +1,10 @@
 require 'spec_helper'
 describe 'localization' do
 
+  it { should compile.with_all_deps }
+
   context 'with default options' do
-    it {
-      should include_class('localization')
-    }
+    it { should contain_class('localization') }
   end
 
   context 'with languages specified as a hash' do
@@ -48,7 +48,7 @@ describe 'localization' do
 
     it do
       expect {
-        should include_class('localization')
+        should contain_class('localization')
       }.to raise_error(Puppet::Error)
     end
   end
