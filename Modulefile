@@ -7,4 +7,4 @@ summary 'put a summary here'
 description 'put a description here'
 project_page 'https://github.com/ghoneycutt/puppet-module-localization'
 
-dependency 'puppetlabs/stdlib', '3.2.x'
+dependency 'puppetlabs/stdlib', '>=3.2.0'
