@@ -13,8 +13,13 @@ This module is built for use with Puppet v3 on systems that can specify a list o
 
 ===
 
+# Usage
+
+`include ::localization`
+
 # Parameters
-------------
+
+### Class: localization
 
 languages
 ---------
@@ -22,36 +27,34 @@ Hash of languages with their respective packages.
 
 - *Default*: undef
 
+### Define: localization::lang
+
+packages
+--------
+Required string or array of packages to be installed.
+
 ===
 
 # Example Hiera configuration
-<pre>
----
-:backends:
-  - yaml
-:hierarchy:
-  - fqdn/%{fqdn}
-  - roles/%{role}
-  - %{environment}
-  - osfamily/%{osfamily}-%{lsbmajdistrelease}
-  - osfamily/%{osfamily}
-  - common
 
-:yaml:
-  :datadir:
-</pre>
+Install Swedish language on EL 5
 
-# Example Hiera data
-
-More examples included in data/ directory of module.
-
-
-<pre>
----
-
+``` yaml
 localization::languages:
   'sv':
     packages:
       - aspell-sv
       - kde-i18n-Swedish
-</pre>
+```
+
+Install Swedish language on EL 6
+
+``` yaml
+localization::languages:
+  'sv':
+    packages:
+      - eclipse-nls-sv
+      - hunspell-sv
+      - kde-i18n-Swedish
+      - kde-l10n-Swedish
+```
