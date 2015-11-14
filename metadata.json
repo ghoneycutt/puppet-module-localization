@@ -1,0 +1,54 @@
+{
+  "name": "ghoneycutt-localization",
+  "version": "1.0.1",
+  "author": "ghoneycutt",
+  "summary": "Manage localization packages",
+  "license": "Apache-2.0",
+  "source": "git://github.com/ghoneycutt/puppet-module-localization.git",
+  "project_page": "https://github.com/ghoneycutt/puppet-module-localization",
+  "issues_url": "https://github.com/ghoneycutt/puppet-module-localization/issues",
+  "description": "Manage localization packages",
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">= 3.2.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0 < 5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "5",
+        "6"
+      ]
+    }
+  ],
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">=4.6.0 < 6.0.0"}
+  ]
+}
