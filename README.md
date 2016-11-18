@@ -9,7 +9,8 @@ Ensure installation of language related packages.
 
 # Compatibility
 ---------------
-This module is built for use with Puppet v3 on systems that can specify a list of packages to be ensured.
+This module is built for use with Puppet v3 and v4 on systems that can
+specify a list of packages to be ensured.
 
 ===
 
