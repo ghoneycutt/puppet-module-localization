@@ -1,16 +1,14 @@
 # puppet-module-localization
 ===
 
-[![Build Status](https://travis-ci.org/ghoneycutt/puppet-module-localization.png?branch=master)](https://travis-ci.org/ghoneycutt/puppet-module-localization)
-
 Ensure installation of language related packages.
 
 ===
 
 # Compatibility
 ---------------
-This module is built for use with Puppet v3 and v4 on systems that can
-specify a list of packages to be ensured.
+This module is built for use with Puppet versions 3, 4, 5 and 6 on
+systems that can specify a list of packages to be ensured.
 
 ===
 
